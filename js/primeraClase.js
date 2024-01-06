@@ -55,3 +55,27 @@ switch (dia.toLowerCase()) {
     break;
 }
 
+// PEQUEÑA DEMOSTRACION DE COMO FUNCIONA UN PROGRAMA CON UNA ESTRUCTURA IF Y PROMPTS
+
+let nombre = prompt('Ingresa tu nombre:', 'Tomás')
+let edad = prompt('ingresa tu edad:', '0')
+let secundario = "NO"
+
+document.write(nombre + " tiene " + edad)
+
+if (edad > 18) {
+  secundario = prompt('¿termino la secundaria?' , 'SI')
+}
+//.....................................................................
+if ( edad < 12 ) {
+  document.write("<p>" + nombre + ' estudia en el nivel primario y tiene ' + edad+ '</p>' )
+}
+else if (edad >=12 && edad <=18 ) {
+  document.write("<p>" + nombre + ' estudia en el nivel secundario y tiene ' + edad+ '</p>' )
+}
+else if (edad >= 18 && secundario == "SI") {
+  document.write("<p>" + nombre + ' puede ingresar a la universidad y tiene ' + edad+ '</p>' )
+}
+else {
+  document.write("<p>" + nombre + ' debe volver y terminar el secundario '+ '</p>' )
+}
